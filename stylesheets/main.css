@@ -1,60 +1,323 @@
-/*
-Syntax error: File to import not found or unreadable: *.png.
-              Load paths:
-                C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass
-                C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/blueprint/stylesheets
-                C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 3 of C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass/main.scss
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-1: C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass/main.scss
+/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass/main.scss:3
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/update_project.rb:45:in `perform'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-C:/Ruby200-x64/bin/compass:23:in `load'
-C:/Ruby200-x64/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: *.png.\A               Load paths:\A                 C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass\A                 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/blueprint/stylesheets\A                 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 3 of C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass/main.scss\A \A 1: C:/Users/G4A/Documents/GitHub/MaquetaBal2/sass/main.scss"; }
+/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/main.scss */
+body {
+  background-color: white;
+  font-family: Open Sans Condensed;
+}
+
+/* line 12, ../sass/main.scss */
+#menu-customized {
+  height: 59px;
+  width: 100%;
+  background-color: #2e2e2e;
+  font-size: 18px;
+  color: white;
+}
+/* line 18, ../sass/main.scss */
+#menu-customized .vectorLogo {
+  float: right !important;
+  margin: 6px 154px 0px 0px;
+  height: 43px;
+  width: 45px;
+  background-image: url('../img/sprites/icon-s2381c30043.png');
+  background-position: 0 -201px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 18, ../sass/main.scss */
+  #menu-customized .vectorLogo {
+    background-image: url('../img/sprites-2x/icon-s6877663620.png');
+    background-position: 0 -180px;
+    -webkit-background-size: 261px auto;
+    -moz-background-size: 261px auto;
+    -o-background-size: 261px auto;
+    background-size: 261px auto;
+  }
+}
+/* line 23, ../sass/main.scss */
+#menu-customized .centerLogo {
+  position: absolute;
+  left: 47%;
+  background-color: #d2d2d2;
+  height: 120px;
+  width: 138px;
+  background-image: url('../img/sprites/icon-s2381c30043.png');
+  background-position: 0 -61px;
+  background-repeat: no-repeat;
+  box-shadow: 0px -10px 9px 3px #a2a1a1;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 23, ../sass/main.scss */
+  #menu-customized .centerLogo {
+    background-image: url('../img/sprites-2x/icon-s6877663620.png');
+    background-position: 0 0;
+    -webkit-background-size: 261px auto;
+    -moz-background-size: 261px auto;
+    -o-background-size: 261px auto;
+    background-size: 261px auto;
+  }
+}
+/* line 30, ../sass/main.scss */
+#menu-customized .who {
+  float: left;
+  color: white;
+  margin: 17px 21px 0px 300px;
+  width: 109px;
+  height: 23px;
+}
+/* line 37, ../sass/main.scss */
+#menu-customized .selectedWho {
+  right: 38px;
+  bottom: 21px;
+  position: relative;
+  opacity: 0.5;
+  height: 26px;
+  width: 161px;
+  background-image: url('../img/sprites/icon-s2381c30043.png');
+  background-position: 0 -33px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 37, ../sass/main.scss */
+  #menu-customized .selectedWho {
+    background-image: url('../img/sprites-2x/icon-s6877663620.png');
+    background-position: 0 -153px;
+    -webkit-background-size: 261px auto;
+    -moz-background-size: 261px auto;
+    -o-background-size: 261px auto;
+    background-size: 261px auto;
+  }
+}
+/* line 44, ../sass/main.scss */
+#menu-customized .us {
+  float: left;
+  margin: 7px 2px 0px 26px;
+}
+/* line 48, ../sass/main.scss */
+#menu-customized .selectedUs {
+  position: relative;
+  right: 135px;
+  top: 7px;
+  opacity: 0.5;
+  height: 26px;
+  width: 161px;
+  background-image: url('../img/sprites/icon-s2381c30043.png');
+  background-position: 0 -33px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 48, ../sass/main.scss */
+  #menu-customized .selectedUs {
+    background-image: url('../img/sprites-2x/icon-s6877663620.png');
+    background-position: 0 -153px;
+    -webkit-background-size: 261px auto;
+    -moz-background-size: 261px auto;
+    -o-background-size: 261px auto;
+    background-size: 261px auto;
+  }
+}
+/* line 55, ../sass/main.scss */
+#menu-customized .responsibility {
+  float: right;
+  margin: 16px 50px 10px 10px;
+  height: 23px;
+  width: 170px;
+}
+/* line 61, ../sass/main.scss */
+#menu-customized .selectedResponsibility {
+  position: relative;
+  right: 45px;
+  bottom: 24px;
+  opacity: 0.5;
+  height: 31px;
+  width: 261px;
+  background-image: url('../img/sprites/icon-s2381c30043.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 61, ../sass/main.scss */
+  #menu-customized .selectedResponsibility {
+    background-image: url('../img/sprites-2x/icon-s6877663620.png');
+    background-position: 0 -121px;
+    -webkit-background-size: 261px auto;
+    -moz-background-size: 261px auto;
+    -o-background-size: 261px auto;
+    background-size: 261px auto;
+  }
+}
+/* line 68, ../sass/main.scss */
+#menu-customized .languages {
+  float: right;
+  margin: 17px 9px 0px 5px;
+}
+/* line 71, ../sass/main.scss */
+#menu-customized .languages .es, #menu-customized .languages .en {
+  color: gray;
+  float: right;
+  margin: 0px 3px 0px 3px;
+}
+/* line 76, ../sass/main.scss */
+#menu-customized .languages .es:hover, #menu-customized .languages .en:hover {
+  color: white;
+}
+
+/* line 81, ../sass/main.scss */
+.sliderdiv {
+  height: 602px;
+}
+
+/* line 84, ../sass/main.scss */
+.slider-custom {
+  width: 100%;
+  height: 542px;
+  margin-bottom: 35px;
+  z-index: -1;
+}
+
+/* line 90, ../sass/main.scss */
+.caption {
+  background-color: #777777;
+  opacity: 0.6;
+  height: 110px;
+  width: 100%;
+  position: relative;
+  bottom: 145px;
+  color: white;
+  padding: 15px 0px 0px 210px;
+}
+/* line 99, ../sass/main.scss */
+.caption .captionTitle {
+  opacity: 1 !important;
+  height: 40px;
+  font-size: 35px;
+}
+/* line 104, ../sass/main.scss */
+.caption .captionText {
+  opacity: 1 !important;
+  height: 25px;
+  font-size: 19px;
+}
+
+/* line 110, ../sass/main.scss */
+.scroll {
+  height: 345px;
+  width: 100%;
+}
+/* line 113, ../sass/main.scss */
+.scroll .scroll-title {
+  -webkit-transform: rotate(-30deg);
+  display: inline-block;
+  width: 9%;
+  position: relative;
+  top: 24px;
+  left: 23px;
+}
+/* line 121, ../sass/main.scss */
+.scroll .transforming {
+  height: 286px;
+  -webkit-transform: rotate(60deg);
+  width: 216px;
+  overflow: hidden;
+}
+/* line 126, ../sass/main.scss */
+.scroll .transforming .scroll-item {
+  margin: 10px 6px 10px 6px;
+  -webkit-transform: rotate(-60deg);
+}
+
+/* line 132, ../sass/main.scss */
+.footer {
+  width: 1203px;
+  height: 266px;
+  float: right;
+}
+
+/* line 137, ../sass/main.scss */
+.weAre {
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+/* line 141, ../sass/main.scss */
+.weAre #grupoBAL {
+  color: #565656;
+  font-weight: bold;
+}
+
+/* line 146, ../sass/main.scss */
+#grad {
+  background: -webkit-linear-gradient(left, rgba(216, 214, 214, 0.1), rgba(216, 214, 214, 0.1));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, rgba(216, 214, 214, 0.1), rgba(216, 214, 214, 0.1));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, rgba(216, 214, 214, 0.1), rgba(216, 214, 214, 0.1));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(216, 214, 214, 0.1), rgba(216, 214, 214, 0.1));
+  /*Standard*/
+}

@@ -1,34 +1,86 @@
-@import "compass";
+@import "compass/reset";
 @import "compass/utilities/sprites";
-@import "*.png";
-@include all-img-sprites;
-$icons-sprite-dimensions: true;
+@import "compass/css3";
+@import "mixins";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-body{ 
-	background-color: #123456;
+@include retina-sprite-add(icon, "sprites/icon/*.png", "sprites-2x/icon/*.png");
+
+body{
+	background-color: white;
+	font-family: Open Sans Condensed;
 }
 #menu-customized{
 	height: 59px;
 	width: 100%;
 	background-color: #2e2e2e;
-	.centerLogo{
-			width: 138px;
-			height: 121px;
-			z-index: 1;
-			position: relative;
-			left: 50%;
-			background-color: #d2d2d2;
-			background-image: url("img/sprite.png");
-			background-repeat: no-repeat;
-			background-position: 0px;
-	}
-	/* Elements...
-	.nav-customized{
-	}*/
+	font-size: 18px;
+	color: white;
 	.vectorLogo{
-		width: 43px;
+		float: right !important;
+		margin: 6px 154px 0px 0px;
+		@include retina-sprite(vector-logo);
 	}
-} 
+	.centerLogo{
+		position: absolute;
+		left: 47%;
+		background-color: #d2d2d2;
+		@include retina-sprite(center-logo);
+		box-shadow: 0px -10px 9px 3px #a2a1a1;
+	}
+	.who{
+		float: left;
+		color: white;
+		margin: 17px 21px 0px 300px;
+		width: 109px;
+		height: 23px;
+	}
+	.selectedWho{
+		right: 38px;
+		bottom: 21px;
+		position: relative;
+		opacity: 0.5;
+		@include retina-sprite(selected);
+	}
+	.us{
+		float: left;
+		margin: 7px 2px 0px 26px;
+	}
+	.selectedUs{
+		position: relative;
+		right: 135px;
+		top: 7px;
+		opacity: 0.5;
+		@include retina-sprite(selected);
+	}
+	.responsibility{
+		float: right;
+		margin: 16px 50px 10px 10px;
+		height: 23px;
+		width: 170px;
+	}
+	.selectedResponsibility{
+		position: relative;
+		right: 45px;
+		bottom: 24px;
+		opacity: 0.5;
+		@include retina-sprite(selected-resp);		
+	}
+	.languages{
+		float: right;
+		margin: 17px 9px 0px 5px;
+		.es, .en{
+			color: gray;
+			float: right;
+			margin: 0px 3px 0px 3px;
+		}
+		.es:hover, .en:hover{
+			color: white;
+		} 
+	}
+}
+.sliderdiv{
+	height: 602px;
+}
 .slider-custom{
 	width: 100%;
 	height: 542px;
@@ -36,20 +88,18 @@ body{
 	z-index: -1;
 }
 .caption{
-	font-family: Open Sans Condensed;
 	background-color: #777777;
 	opacity: 0.6;
 	height: 110px;
-	width: 1336px;
-	position: absolute;
-	bottom: 42px;
+	width: 100%;
+	position: relative;
+	bottom: 145px;
 	color: white;
-	padding-left: 210px;
+	padding: 15px 0px 0px 210px;
 	.captionTitle{
 		opacity: 1 !important;
 		height: 40px;
 		font-size: 35px;
-		margin-top: 24px;
 	}
 	.captionText{
 		opacity: 1 !important;
@@ -57,14 +107,45 @@ body{
 		font-size: 19px;
 	}
 }
-.mainContent{
-	width: 979px;
-	.scroll{
-		height: 345px;
+.scroll{
+	height: 345px;
+	width: 100%;
+	.scroll-title{
+		-webkit-transform: rotate(-30deg);
+		display: inline-block;
+		width: 9%;
+		position: relative;
+		top: 24px;
+		left: 23px;
+	}
+	.transforming{
+		height: 286px;
+		-webkit-transform: rotate(60deg);
+		width: 216px;
+		overflow: hidden;
+		.scroll-item{
+			margin: 10px 6px 10px 6px;
+			-webkit-transform: rotate(-60deg);
+		}
 	}
 }
 .footer{
 	width: 1203px;
 	height: 266px;
 	float: right;
+}
+.weAre{
+	font-size: 54px;
+	text-align: center;
+	margin-bottom: 55px;
+	#grupoBAL{
+		color: #565656;
+		font-weight: bold;
+	}
+}
+#grad{
+	background: -webkit-linear-gradient(left,rgba(216,214,214, 0.1),rgba(216,214,214, 0.1)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(right,rgba(216,214,214, 0.1),rgba(216,214,214, 0.1)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(right,rgba(216,214,214, 0.1),rgba(216,214,214, 0.1)); /*Fx 3.6-15*/
+	background: linear-gradient(to right, rgba(216,214,214, 0.1), rgba(216,214,214, 0.1)); /*Standard*/
 }
