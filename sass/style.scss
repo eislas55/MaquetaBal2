@@ -1,5 +1,5 @@
 @import 'compass';
-
+/*Style for slider and caption slider*/
 .slider {
 position: relative;
 width: 100%;
@@ -48,8 +48,8 @@ padding: 20px;
 }
 
 .slider-nav__item {
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	float: left;
 	clear: none;
 	display: block;

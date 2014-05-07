@@ -1,3 +1,4 @@
+/*Style for slider and caption slider*/
 /* line 3, ../sass/style.scss */
 .slider {
   position: relative;
@@ -51,8 +52,8 @@
 
 /* line 50, ../sass/style.scss */
 .slider-nav__item {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   float: left;
   clear: none;
   display: block;

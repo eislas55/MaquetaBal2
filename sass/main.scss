@@ -8,66 +8,50 @@
 body{
 	background-color: white;
 	font-family: Open Sans Condensed;
+	color: #565656;
 }
+/*******************HEADER***********************/
 #menu-customized{
 	height: 59px;
 	width: 100%;
 	background-color: #2e2e2e;
 	font-size: 18px;
 	color: white;
-	.vectorLogo{
-		float: right !important;
-		margin: 6px 154px 0px 0px;
-		@include retina-sprite(vector-logo);
+	.vectorLogo, .who, .us, .languages, .responsibility{
+		float: left;
+		display: inline;
+	}
+	.who:hover, .us:hover, .responsibility:hover{
+		background-color: #262626;
+		padding: 6px 24px;
+		border-radius: 30%;
+	}
+	.who{
+		color: white;
+		margin: 14px 21px 0px 300px;
+	}
+	.us{
+		margin: 14px 2px 0px 26px;
 	}
 	.centerLogo{
 		position: absolute;
 		left: 47%;
+		top: 0px;
 		background-color: #d2d2d2;
 		@include retina-sprite(center-logo);
 		box-shadow: 0px -10px 9px 3px #a2a1a1;
 	}
-	.who{
-		float: left;
-		color: white;
-		margin: 17px 21px 0px 300px;
-		width: 109px;
-		height: 23px;
-	}
 	.selectedWho{
 		right: 38px;
 		bottom: 21px;
-		position: relative;
-		opacity: 0.5;
-		@include retina-sprite(selected);
-	}
-	.us{
-		float: left;
-		margin: 7px 2px 0px 26px;
-	}
-	.selectedUs{
-		position: relative;
-		right: 135px;
-		top: 7px;
 		opacity: 0.5;
 		@include retina-sprite(selected);
 	}
 	.responsibility{
-		float: right;
-		margin: 16px 50px 10px 10px;
-		height: 23px;
-		width: 170px;
-	}
-	.selectedResponsibility{
-		position: relative;
-		right: 45px;
-		bottom: 24px;
-		opacity: 0.5;
-		@include retina-sprite(selected-resp);		
+		margin: 14px 10px 10px 254px;
 	}
 	.languages{
-		float: right;
-		margin: 17px 9px 0px 5px;
+		margin: 14px 9px 0px 7px;
 		.es, .en{
 			color: gray;
 			float: right;
@@ -75,9 +59,26 @@ body{
 		}
 		.es:hover, .en:hover{
 			color: white;
-		} 
+		}
+	}
+	.vectorLogo{
+		margin: 8.5px 0px 0px 0px;
+		@include retina-sprite(vector-logo);
+	}
+	.selectedUs{
+		right: 135px;
+		top: 7px;
+		opacity: 0.5;
+		@include retina-sprite(selected);
+	}
+	.selectedResponsibility{
+		right: 45px;
+		bottom: 24px;
+		opacity: 0.5;
+		@include retina-sprite(selected-resp);		
 	}
 }
+/*******************SLIDER***********************/
 .sliderdiv{
 	height: 602px;
 }
@@ -107,45 +108,268 @@ body{
 		font-size: 19px;
 	}
 }
-.scroll{
-	height: 345px;
-	width: 100%;
-	.scroll-title{
-		-webkit-transform: rotate(-30deg);
-		display: inline-block;
-		width: 9%;
-		position: relative;
-		top: 24px;
-		left: 23px;
-	}
-	.transforming{
-		height: 286px;
-		-webkit-transform: rotate(60deg);
-		width: 216px;
-		overflow: hidden;
-		.scroll-item{
-			margin: 10px 6px 10px 6px;
-			-webkit-transform: rotate(-60deg);
-		}
-	}
-}
-.footer{
-	width: 1203px;
-	height: 266px;
-	float: right;
-}
+/*******************CONTENT***********************/
 .weAre{
 	font-size: 54px;
 	text-align: center;
 	margin-bottom: 55px;
 	#grupoBAL{
-		color: #565656;
 		font-weight: bold;
 	}
+}
+#team{
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 55px;
 }
 #grad{
 	background: -webkit-linear-gradient(left,rgba(216,214,214, 0.1),rgba(216,214,214, 0.1)); /*Safari 5.1-6*/
 	background: -o-linear-gradient(right,rgba(216,214,214, 0.1),rgba(216,214,214, 0.1)); /*Opera 11.1-12*/
 	background: -moz-linear-gradient(right,rgba(216,214,214, 0.1),rgba(216,214,214, 0.1)); /*Fx 3.6-15*/
 	background: linear-gradient(to right, rgba(216,214,214, 0.1), rgba(216,214,214, 0.1)); /*Standard*/
+}
+.wrapper-scroll{
+	float: left;
+	width: 196px;
+	position: relative;
+	margin: 0px 2px;
+	left: 80px;
+}
+.scroll{
+	height: 415px;
+	width: 100%;
+	margin-bottom: 8px;
+	.scroll-title{
+		-webkit-transform: rotate(-29deg);
+		transform: rotate(-29deg);
+		width: 62%;
+		position: relative;
+		top: 49px;
+		right: -7px;
+		text-align: center;
+		font-size: 21px;
+	}
+	.transforming{
+		height: 311px;
+		-webkit-transform: rotate(60deg);
+		transform: rotate(60deg);
+		width: 226px;
+		overflow: hidden;
+		.scroll-item{
+			margin: 17px 6px 10px -27px;
+			-webkit-transform: rotate(-60deg);
+			transform: rotate(-60deg);
+		}
+	}
+	.scroll-circles{
+		height: 69px;
+		width: 69px;
+		border-radius: 50%;
+		border: solid 35px #43677c;
+		float: left;
+		margin: 0px 63px;
+		.op-industriales{
+			@include retina-sprite(op-industriales);
+			position: relative;
+			bottom: 14px;
+			right: 16px;
+		}
+		.serv-financieros{
+			@include retina-sprite(serv-financieros);
+			position: relative;
+			right: 12px;
+			bottom: 22px;
+		}
+		.op-comerciales{
+			@include retina-sprite(op-comerciales);
+			position: relative;
+			bottom: 18px;
+			right: 10px;
+		}
+		.divi-agropecuaria{
+			@include retina-sprite(divi-agropecuaria);
+			position: relative;
+			bottom: 12px;
+			right: 20px;
+		}
+		.resp-social{
+			@include retina-sprite(resp-social);
+			position: relative;
+			bottom: 13px;
+			right: 30px;
+		}
+	}
+}
+.circles-wrapper{
+	width: 981px;
+	height: 403px;
+	position: relative;
+	left: 91px;
+	bottom: 68px;
+	z-index: 1;
+}
+.friends{
+	height: 267px;
+	img{
+		margin: 10px 62px;
+	}
+}
+.bwWrapper {
+    position:relative;
+    display:inline-block;
+    .penoles{
+    	@include retina-sprite(penoles);
+    }
+    .gnpAssurance{
+    	@include retina-sprite(gnp);
+    }
+    .palacio{
+    	@include retina-sprite(palacio);
+    }
+    .profuturo{
+    	@include retina-sprite(profuturo);
+    }
+    .fresnillo{
+    	@include retina-sprite(fresnillo);
+    }    
+    .bolsa{
+    	@include retina-sprite(bolsa);
+    }
+    .valmex{
+    	@include retina-sprite(valmex);
+    }
+    .tane{
+    	@include retina-sprite(tane);
+    }
+}
+.values{
+	height: 154px;
+	font-size: 30px;
+	text-align: center;
+	p{
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	span{
+		font-weight: bold;
+	}
+}
+.block {
+	background: url('http://placehold.it/570x370');
+	height: 370px;
+	border: 1px solid black;
+} 
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+  /* For visualization 
+  background: #808080; width: 5px;
+  */
+ } 
+.centered {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 15px;
+	background-color: black;
+	opacity: 0.6;
+	margin: 5px 10px;
+	p{
+		color: white;
+		span{
+			font-weight: bold;
+		}
+	}
+ }
+/*******************FOOTER***********************/
+.footer{
+	width: 100%;
+	height: 178px;
+	background-color: #4f4f4f;
+	font-size: 20px;
+	a{
+		color: #888888;
+	}
+	.footer-left{
+		margin-top: 25px;
+		a:hover{
+			color: white!important;
+		}
+	}
+	.footer-middle{
+		color: white;		
+		.logo{
+			margin: 15px 40% 0px 40%;
+			@include retina-sprite(logo);
+		}
+		p{
+			text-align: center;
+			width: 220px;
+			margin: 10px 0px 0px 20%;
+		}
+		span{
+			font-weight: bold;
+		}
+	}
+	.footer-right{
+		float: right;
+		.logo-smallie{
+			margin-top: 10px;
+			@include retina-sprite(logo-smallie);
+		}
+		.msg{
+			margin-top: 10px;
+			@include retina-sprite(msg);
+		}
+	}
+	.nombre{
+		width: 222px;
+		margin-left: 8px;
+	}
+	.email{
+		width: 307px;
+	}
+	.comentario{
+		width: 307px;
+		display: block;
+	}
+	.captcha{
+		width: 123px;
+		margin: 0px 10px 0px 13px;
+	}
+	.contact-me{
+		background-color: #eaa73e;
+		color: white;
+		width: 137px;
+	}
+}
+.the-form, .the-form ul, .the-form ul li{
+	display: inline;	
+}
+.the-form ul li input{
+	margin-bottom: 5px;
+}
+.the-form{
+	color: white;
+}
+.the-form ul li label{
+	margin-left: 2px;
+}
+.copyrights{
+	background-color: #2d2d2d;
+	width: 100%;
+	height: 41px;
+	color: #8a8a8a;
+	span{
+		margin: 5px 18% 0px 42%;
+	}
+	p{
+		display: inline;
+		img{
+			@include retina-sprite(g4a);
+			margin: 10px 10px 0px 0px;
+		}
+	}
 }
