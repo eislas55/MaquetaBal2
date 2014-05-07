@@ -129,32 +129,28 @@ body{
 	background: linear-gradient(to right, rgba(216,214,214, 0.1), rgba(216,214,214, 0.1)); /*Standard*/
 }
 .wrapper-scroll{
-	float: left;
-	width: 196px;
-	position: relative;
-	margin: 0px 2px;
-	left: 80px;
+	display: inline;
 }
 .scroll{
 	height: 415px;
 	width: 100%;
+	float:	left;
 	margin-bottom: 8px;
 	.scroll-title{
 		-webkit-transform: rotate(-29deg);
 		transform: rotate(-29deg);
-		width: 62%;
-		position: relative;
-		top: 49px;
-		right: -7px;
+		width: 11%;
 		text-align: center;
+		display: inline;
 		font-size: 21px;
 	}
 	.transforming{
-		height: 311px;
+		height: 281px;
 		-webkit-transform: rotate(60deg);
 		transform: rotate(60deg);
-		width: 226px;
+		width: 217px;
 		overflow: hidden;
+		float: left;
 		.scroll-item{
 			margin: 17px 6px 10px -27px;
 			-webkit-transform: rotate(-60deg);
@@ -200,13 +196,17 @@ body{
 		}
 	}
 }
+.layout{
+	width: 100%;
+	position: relative;
+}
 .circles-wrapper{
 	width: 981px;
-	height: 403px;
+	height: 403px;/*
 	position: relative;
 	left: 91px;
 	bottom: 68px;
-	z-index: 1;
+	z-index: 1;*/
 }
 .friends{
 	height: 267px;
@@ -278,6 +278,7 @@ body{
 	margin: 5px 10px;
 	p{
 		color: white;
+		font-size: 22px;
 		span{
 			font-weight: bold;
 		}

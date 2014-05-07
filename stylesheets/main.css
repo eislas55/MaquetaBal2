@@ -300,45 +300,41 @@ body {
 
 /* line 131, ../sass/main.scss */
 .wrapper-scroll {
-  float: left;
-  width: 196px;
-  position: relative;
-  margin: 0px 2px;
-  left: 80px;
+  display: inline;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .scroll {
   height: 415px;
   width: 100%;
+  float: left;
   margin-bottom: 8px;
 }
-/* line 142, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .scroll .scroll-title {
   -webkit-transform: rotate(-29deg);
   transform: rotate(-29deg);
-  width: 62%;
-  position: relative;
-  top: 49px;
-  right: -7px;
+  width: 11%;
   text-align: center;
+  display: inline;
   font-size: 21px;
 }
-/* line 152, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .scroll .transforming {
-  height: 311px;
+  height: 281px;
   -webkit-transform: rotate(60deg);
   transform: rotate(60deg);
-  width: 226px;
+  width: 217px;
   overflow: hidden;
+  float: left;
 }
-/* line 158, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .scroll .transforming .scroll-item {
   margin: 17px 6px 10px -27px;
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
-/* line 164, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 .scroll .scroll-circles {
   height: 69px;
   width: 69px;
@@ -347,7 +343,7 @@ body {
   float: left;
   margin: 0px 63px;
 }
-/* line 171, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .scroll .scroll-circles .op-industriales {
   height: 30px;
   width: 32px;
@@ -359,7 +355,7 @@ body {
   right: 16px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 171, ../sass/main.scss */
+  /* line 167, ../sass/main.scss */
   .scroll .scroll-circles .op-industriales {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -1066.5px;
@@ -369,7 +365,7 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 177, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 .scroll .scroll-circles .serv-financieros {
   height: 43px;
   width: 26px;
@@ -381,7 +377,7 @@ body {
   bottom: 22px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 177, ../sass/main.scss */
+  /* line 173, ../sass/main.scss */
   .scroll .scroll-circles .serv-financieros {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -966.5px;
@@ -391,7 +387,7 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 183, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 .scroll .scroll-circles .op-comerciales {
   height: 37px;
   width: 20px;
@@ -403,7 +399,7 @@ body {
   right: 10px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 183, ../sass/main.scss */
+  /* line 179, ../sass/main.scss */
   .scroll .scroll-circles .op-comerciales {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -1010.5px;
@@ -413,7 +409,7 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 189, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .scroll .scroll-circles .divi-agropecuaria {
   height: 23px;
   width: 39px;
@@ -425,7 +421,7 @@ body {
   right: 20px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 189, ../sass/main.scss */
+  /* line 185, ../sass/main.scss */
   .scroll .scroll-circles .divi-agropecuaria {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -942.5px;
@@ -435,7 +431,7 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 195, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .scroll .scroll-circles .resp-social {
   height: 24px;
   width: 61px;
@@ -447,7 +443,7 @@ body {
   right: 30px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 195, ../sass/main.scss */
+  /* line 191, ../sass/main.scss */
   .scroll .scroll-circles .resp-social {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -832.5px;
@@ -458,14 +454,21 @@ body {
   }
 }
 
+/* line 199, ../sass/main.scss */
+.layout {
+  width: 100%;
+  position: relative;
+}
+
 /* line 203, ../sass/main.scss */
 .circles-wrapper {
   width: 981px;
   height: 403px;
-  position: relative;
-  left: 91px;
-  bottom: 68px;
-  z-index: 1;
+              /*
+position: relative;
+left: 91px;
+bottom: 68px;
+z-index: 1;*/
 }
 
 /* line 211, ../sass/main.scss */
@@ -683,37 +686,38 @@ body {
 /* line 279, ../sass/main.scss */
 .centered p {
   color: white;
+  font-size: 22px;
 }
-/* line 281, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .centered p span {
   font-weight: bold;
 }
 
 /*******************FOOTER***********************/
-/* line 287, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 .footer {
   width: 100%;
   height: 178px;
   background-color: #4f4f4f;
   font-size: 20px;
 }
-/* line 292, ../sass/main.scss */
+/* line 293, ../sass/main.scss */
 .footer a {
   color: #888888;
 }
-/* line 295, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 .footer .footer-left {
   margin-top: 25px;
 }
-/* line 297, ../sass/main.scss */
+/* line 298, ../sass/main.scss */
 .footer .footer-left a:hover {
   color: white !important;
 }
-/* line 301, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .footer .footer-middle {
   color: white;
 }
-/* line 303, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 .footer .footer-middle .logo {
   margin: 15px 40% 0px 40%;
   height: 70px;
@@ -723,7 +727,7 @@ body {
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 303, ../sass/main.scss */
+  /* line 304, ../sass/main.scss */
   .footer .footer-middle .logo {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -679.5px;
@@ -733,21 +737,21 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 307, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 .footer .footer-middle p {
   text-align: center;
   width: 220px;
   margin: 10px 0px 0px 20%;
 }
-/* line 312, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 .footer .footer-middle span {
   font-weight: bold;
 }
-/* line 316, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 .footer .footer-right {
   float: right;
 }
-/* line 318, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 .footer .footer-right .logo-smallie {
   margin-top: 10px;
   height: 40px;
@@ -757,7 +761,7 @@ body {
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 318, ../sass/main.scss */
+  /* line 319, ../sass/main.scss */
   .footer .footer-right .logo-smallie {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -857.5px;
@@ -767,7 +771,7 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 322, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 .footer .footer-right .msg {
   margin-top: 10px;
   height: 17px;
@@ -777,7 +781,7 @@ body {
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 322, ../sass/main.scss */
+  /* line 323, ../sass/main.scss */
   .footer .footer-right .msg {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -1048.5px;
@@ -787,68 +791,68 @@ body {
     background-size: 261px auto;
   }
 }
-/* line 327, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 .footer .nombre {
   width: 222px;
   margin-left: 8px;
 }
-/* line 331, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 .footer .email {
   width: 307px;
 }
-/* line 334, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 .footer .comentario {
   width: 307px;
   display: block;
 }
-/* line 338, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 .footer .captcha {
   width: 123px;
   margin: 0px 10px 0px 13px;
 }
-/* line 342, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 .footer .contact-me {
   background-color: #eaa73e;
   color: white;
   width: 137px;
 }
 
-/* line 348, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 .the-form, .the-form ul, .the-form ul li {
   display: inline;
 }
 
-/* line 351, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .the-form ul li input {
   margin-bottom: 5px;
 }
 
-/* line 354, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .the-form {
   color: white;
 }
 
-/* line 357, ../sass/main.scss */
+/* line 358, ../sass/main.scss */
 .the-form ul li label {
   margin-left: 2px;
 }
 
-/* line 360, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 .copyrights {
   background-color: #2d2d2d;
   width: 100%;
   height: 41px;
   color: #8a8a8a;
 }
-/* line 365, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 .copyrights span {
   margin: 5px 18% 0px 42%;
 }
-/* line 368, ../sass/main.scss */
+/* line 369, ../sass/main.scss */
 .copyrights p {
   display: inline;
 }
-/* line 370, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 .copyrights p img {
   height: 22px;
   width: 71px;
@@ -858,7 +862,7 @@ body {
   margin: 10px 10px 0px 0px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 370, ../sass/main.scss */
+  /* line 371, ../sass/main.scss */
   .copyrights p img {
     background-image: url('../img/sprites-2x/icon-s61b44c17d0.png');
     background-position: 0 -782.5px;
