@@ -49,10 +49,10 @@
 			$wrapper	= $image.wrap('<div class="' + options.cWrapper + '"/>').parent();
 
 		$wrapper.css({
-			height:		$this.height(),
+			height:		'282px',
 			overflow:	'hidden',
 			position:	'relative',
-			width:		$this.width()
+			width:		'217px',
 		});
 
 		$caption.css({

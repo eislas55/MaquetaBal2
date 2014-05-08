@@ -21,14 +21,17 @@ body{
 		float: left;
 		display: inline;
 	}
+	.who, .us, .responsibility, .listadd{
+		padding: 6px 24px;
+	}
 	.who:hover, .us:hover, .responsibility:hover{
 		background-color: #262626;
-		padding: 6px 24px;
-		border-radius: 30%;
+		border-radius: 15px;
+		box-shadow: gray 0px 6px 5px -6px;
 	}
 	.who{
 		color: white;
-		margin: 14px 21px 0px 300px;
+		margin: 14px 21px 0px 236px;
 	}
 	.us{
 		margin: 14px 2px 0px 26px;
@@ -41,17 +44,11 @@ body{
 		@include retina-sprite(center-logo);
 		box-shadow: 0px -10px 9px 3px #a2a1a1;
 	}
-	.selectedWho{
-		right: 38px;
-		bottom: 21px;
-		opacity: 0.5;
-		@include retina-sprite(selected);
-	}
 	.responsibility{
-		margin: 14px 10px 10px 254px;
+		margin: 14px 10px 10px 183px;
 	}
 	.languages{
-		margin: 14px 9px 0px 7px;
+		margin: 20px 9px 0px 5px;
 		.es, .en{
 			color: gray;
 			float: right;
@@ -64,18 +61,6 @@ body{
 	.vectorLogo{
 		margin: 8.5px 0px 0px 0px;
 		@include retina-sprite(vector-logo);
-	}
-	.selectedUs{
-		right: 135px;
-		top: 7px;
-		opacity: 0.5;
-		@include retina-sprite(selected);
-	}
-	.selectedResponsibility{
-		right: 45px;
-		bottom: 24px;
-		opacity: 0.5;
-		@include retina-sprite(selected-resp);		
 	}
 }
 /*******************SLIDER***********************/
@@ -129,32 +114,78 @@ body{
 	background: linear-gradient(to right, rgba(216,214,214, 0.1), rgba(216,214,214, 0.1)); /*Standard*/
 }
 .wrapper-scroll{
-	display: inline;
+		height: 287px;
+		margin-bottom: 11px;
+		float: left;
+		position: relative;
+		left: 88px;
+		width: 190px;
+		top: 50px;
+	&:hover{
+		.captions{
+			bottom: 0px!important;
+		}
+	}
 }
 .scroll{
 	height: 415px;
 	width: 100%;
-	float:	left;
 	margin-bottom: 8px;
-	.scroll-title{
-		-webkit-transform: rotate(-29deg);
-		transform: rotate(-29deg);
-		width: 11%;
-		text-align: center;
-		display: inline;
-		font-size: 21px;
+	ul{
+		margin: 0px 85px;
 	}
-	.transforming{
-		height: 281px;
-		-webkit-transform: rotate(60deg);
-		transform: rotate(60deg);
-		width: 217px;
+	.scroll-title{
+		@include transform(rotate(-32deg));
+		width: 53%;
+		text-align: center;
+		font-size: 21px;
+		position: relative;
+		top: 6px;
+		left: 15px;
+	}
+	.cutImg{
+		height: 279px;
+		@include transform(rotate(60deg));
+		width: 276px;
 		overflow: hidden;
 		float: left;
-		.scroll-item{
-			margin: 17px 6px 10px -27px;
-			-webkit-transform: rotate(-60deg);
-			transform: rotate(-60deg);
+		.captions{
+			width: 180px;
+			height: 250px;
+			background-color: black;
+			position: absolute;
+			bottom: -250px;
+			opacity: .6 !important;
+			@include transition(all .8s ease);
+		}
+		.rotateImg{
+			margin: 0px 102px 0px -37px;
+			@include transform(rotate(-60deg));
+			position: relative;
+			overflow: hidden;
+		}
+	}
+	.captions:before {
+		content: '';
+		display: inline-block;
+		height: 100%; 
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+	.captions .captions-centered{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 10px 15px;
+		background-color: black;
+		opacity: 0.6;
+		margin: 5px 10px;
+		p{
+			opacity: 1!important;
+			color: white;
+			font-size: 22px;
+			span{
+				color: green;
+			}
 		}
 	}
 	.scroll-circles{
@@ -163,7 +194,9 @@ body{
 		border-radius: 50%;
 		border: solid 35px #43677c;
 		float: left;
-		margin: 0px 63px;
+		margin: 0px 59px;
+		position: relative;
+		left: 10px;
 		.op-industriales{
 			@include retina-sprite(op-industriales);
 			position: relative;
@@ -196,17 +229,9 @@ body{
 		}
 	}
 }
-.layout{
-	width: 100%;
-	position: relative;
-}
 .circles-wrapper{
 	width: 981px;
-	height: 403px;/*
-	position: relative;
-	left: 91px;
-	bottom: 68px;
-	z-index: 1;*/
+	height: 403px;
 }
 .friends{
 	height: 267px;
@@ -264,10 +289,7 @@ body{
   display: inline-block;
   height: 100%; 
   vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-  /* For visualization 
-  background: #808080; width: 5px;
-  */
+  margin-right: -0.25em;
  } 
 .centered {
 	display: inline-block;
@@ -283,7 +305,7 @@ body{
 			font-weight: bold;
 		}
 	}
- }
+}
 /*******************FOOTER***********************/
 .footer{
 	width: 100%;
@@ -344,6 +366,7 @@ body{
 		background-color: #eaa73e;
 		color: white;
 		width: 137px;
+		border: none;
 	}
 }
 .the-form, .the-form ul, .the-form ul li{
